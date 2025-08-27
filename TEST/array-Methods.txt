@@ -1,0 +1,83 @@
+[Same array return]👇
+1. push()=> array me last me ak new element ADD kar deta hai. 
+
+[Same array return]👇
+2. pop()=> array me last ka element DELETE kar deta hai.
+
+[Same array return]👇
+3. shift()=> array me first ka element DELETE kar deta hai.
+
+[Same array return].👇
+4. unshift()=> array me first me ak new element ADD kar deta hai.
+
+[New array return].👇
+5. reduce()=> array me jitney element hai sabko jod ke ak new value show karta hai.
+let arr = [2, 3, 4, 5, 6, 7];
+let arr2 = arr.reduce((a, b) => a + b, 0);
+console.log(arr2); // 27
+
+
+[New array return].👇
+6. sort()=> array ko Assending order me sort karta hai.
+let arr = [2, 5, 44, 8, 6, 7, 3];
+arr.sort((a, b) => a - b); // ascending
+console.log(arr); // [2, 3, 5, 6, 7, 8, 44]
+
+arr.sort((a, b) => b - a); // descending
+console.log(arr); // [44, 8, 7, 6, 5, 3, 2]
+
+let arr = ["ankit", "zsingh", "uio", "opu"];
+// Ascending (A → Z)
+arr.sort((a, b) => a.localeCompare(b));
+console.log(arr); 
+// ["ankit", "opu", "uio", "zsingh"]
+
+// Descending (Z → A)
+arr.sort((a, b) => b.localeCompare(a));
+console.log(arr);
+// ["zsingh", "uio", "opu", "ankit"]
+
+let arr = [
+  { name: "ankit", age: 25 },
+  { name: "zsingh", age: 20 },
+  { name: "uio", age: 30 },
+  { name: "opu", age: 22 }
+];
+arr.sort((a, b) => a.age - b.age);
+console.log(arr);
+
+arr.sort((a, b) => a.name.localeCompare(b.name));
+console.log(arr);
+
+
+[New array return].👇
+7. reverse()=> array ko Dssending nhi bas same order me ulta karta hai.
+let arr = [2, 5, 44, 8, 6, 7, 3];
+let arr2 = arr.reverse();
+console.log(arr); // [3, 7, 6, 8, 44, 5, 2]
+
+[New array return].👇
+8. concat()=> spread operator ke Tarah array ya object ko jodta hai.👇
+let asc = [1, 5, 8, 6, 8];
+let asc2 = [9, 10];
+let asc3 = [11, 12];
+let asc4 = [13, 14];
+let result = asc.concat(asc2, asc3, asc4);
+
+[New array return].👇
+9. new Set()=> array ke andar se dublicate values remove kar dega.
+let arr = [2, 5, 44, 5, 6, 7, 2];
+let arr2 = [...new Set(arr)];
+console.log(arr2); // [2, 5, 44, 6, 7]
+
+[New array return].👇
+10. Array.isArray()=> array ko check krta hai vo array hai ya nhi, agar hoga to true otherwise false return krega.
+
+[New array return].👇
+11. Array.from()=> "string" ko array me convert karta hai.
+let str = "hello";
+let arr = Array.from(str);
+console.log(arr);
+
+[New array return].👇
+12. includes()=> array me check krta hai vo particular elements hai ya nhi agar hoga to true otherwise fasle return krega.
