@@ -34,4 +34,3 @@ console.log(arr4); // [10, 20]
 /////////////////////////////////////////////////////////////////////
 
 // splice() original array ko hi modify karta hai.
-// Agar aapko array ko bina badle naya array chahiye, to slice() use karo.

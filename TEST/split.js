@@ -8,7 +8,7 @@ string.split(separator, limit);
   1. separator (required): Kis chiz pe todna hai (jaise space " ", comma ",", ya
   koi character).
   <br />
-  2. limit (optional): Maximum kitne parts me split karna hai.
+  2. limit (optional): Maximum kitne parts tak split karna hai.
 </p>;
 
 let str = "Hello world from ChatGPT";
